@@ -116,3 +116,26 @@ function closeModal() {
 function openModal() {
   modalDiv.style.display = "block";
 }
+
+//search logic
+let search = document.getElementById("searchTxt");
+search.addEventListener("input", function () {
+  let inputVal = search.value.toLowerCase();
+  // console.log(inputVal);
+  // // console.log('Input event fired!', inputVal);
+  let card = document.getElementsByClassName("card");
+  // console.log(card);
+
+  Array.from(card).forEach(function (element) {
+    let cardTxt = element.getElementsByTagName("p")[0].innerText;
+    let cardHead = element.getElementsByTagName("h5")[0].innerText;
+    // console.log(cardTxt);
+
+    if (cardTxt.includes(inputVal) || cardHead.includes(inputVal)) {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+    //   // console.log(cardTxt);
+  });
+});
