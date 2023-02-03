@@ -31,7 +31,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="allNotes.html">All Notes</a>
@@ -51,43 +53,7 @@
         </div>
       </div>
     </nav>
-    <div class="container my-3">
-      <form onsubmit="submitFn();return false;" id="noteForm">
-        <!-- <form id="noteForm"> -->
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
-            ><b>Title</b></label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="noteTitle"
-            aria-describedby="emailHelp"
-          />
-          <div id="emailHelp" class="form-text">
-            This will be set as heading of the Notes.
-          </div>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label"
-            ><b>Note:</b></label
-          >
-          <textarea
-            type="password"
-            class="form-control"
-            id="noteDesc"
-          ></textarea>
-        </div>
 
-        <button
-          type="submit"
-          class="btn btn-success"
-          onclick="return validate();"
-        >
-          Submit
-        </button>
-      </form>
-    </div>
     <div class="container">
       <h1 style="text-align: center">Your Notes</h1>
       <div id="noteCard" class="d-flex flex-row flex-wrap"></div>

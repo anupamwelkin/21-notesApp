@@ -1,5 +1,5 @@
 /* The Modal (background) */
-.modal {
+.m {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -19,7 +19,7 @@
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 45%;
 }
 
 /* The Close Button */
